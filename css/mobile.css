@@ -1,0 +1,85 @@
+@media screen and (max-width: 576px) {
+  /* Banner styling */
+  #banner .title {
+    top: 50%;
+  }
+  #banner .title h1 {
+    font-size: 30px;
+  }
+  #banner .title span {
+    font-size: 20px;
+  }
+  /* Nav bar styling */
+  #nav-bar .container {
+    display: block;
+  }
+  #nav-bar .container a {
+    display: block;
+    text-align: left;
+    padding: 16px;
+  }
+  /* about styling */
+  #about .container {
+    display: block;
+  }
+  #about .container #target {
+    padding: 16px;
+  }
+  #about .container #personal-info {
+    padding: 16px;
+  }
+  #about .container .section-title {
+    font-size: 32px;
+  }
+
+  #about .container .socials a {
+    font-size: 18px;
+  }
+
+  /* Job Info styling */
+  #job-info .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* certificate styling */
+  #certificate {
+    padding: 48px;
+  }
+
+  #certificate .section-title {
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+
+  #certificate .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #certificate .content div {
+    margin-bottom: 32px;
+    border-bottom: 2px solid rgb(255, 146, 107);
+    padding-bottom: 20px;
+  }
+
+  #certificate .content div:nth-child(even) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  #certificate .content img {
+    width: 100%;
+  }
+
+  /* Project styling */
+  #project .container {
+    padding: 16px;
+  }
+  #project .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #footer .container ul li span {
+    display: none;
+  }
+}

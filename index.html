@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/laptop.css">
+	<link rel="stylesheet" href="./css/tablet.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="./css/font.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Assignment 03</title>
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+	<div id="banner">
+		<img src="./images/banner.jpg" alt="">
+		<div class="title">
+			<h1>Nguyễn Phi Đằng</h1>
+			<span>Full Stack Developer</span>
+		</div>
+	</div>
+
+	<section id="nav-bar">
+		<nav class="container">
+			<a href="#"><i class="icon-user"></i>Thông tin</a>
+			<a href="#"><i class="icon-doc-text-inv"></i>Lý lịch</a>
+			<div class="name d-none d-lg-block">
+				<h1>Nguyễn Phi Đằng</h1>
+				<span>Full Stack Developer</span>
+			</div>
+			<a href="#"><i class="icon-mail-alt"></i>Chứng chỉ</a>
+			<a href="#"><i class="icon-star-1"></i>Dự Án</a>
+		</nav>
+	</section>
+
+	<section id="about" class="bg-grey">
+		<div class="container">
+			<div id="target">
+				<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+				<p>
+					Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+					Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+					trí <b>Fullstack Developer</b>, có thể vận dụng những kiến
+					thức đã được trau dồi và không ngừng học hỏi để phát triển
+					bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+				</p>
+			</div>
+			<div id="personal-info">
+				<h1 class="section-title">Thông tin cá nhân</h1>
+				<div id="emailForm">
+					<div class="mb-3">
+						<input type="email" class="form-control" id="inputEmail">
+						<div id="emailHelp" class="form-text">Hãy nhập thông tin đễ xác thực</div>
+						<button class="btn btn-primary" onclick="validateEmail()">Submit</button>
+						<div class="error-msg" id="emailErrorMsg">Email không hợp lệ</div>
+					</div>
+				</div>
+				<div id="userInformation">
+					<ul class="mt-40 info">
+						<li><span>Giới tính</span> : Nam</li>
+						<li><span>Ngày sinh</span> : 09/02/1997</li>
+						<li><span>Điện thoại</span> : (+84) 947045xxx</li>
+						<li><span>Email</span> : dangnpse00415x@funix.edu.vn</li>
+						<li><span>Địa chỉ</span> : Hồ Chí Minh</li>
+						<li><span>Website</span> : https://github.com/phidangnguyen</li>
+					</ul>
+					<div class="socials">
+						<a href="#"><i class="icon-twitter"></i></a>
+						<a href="#"><i class="icon-facebook"></i></a>
+						<a href="#"><i class="icon-gplus"></i></a>
+						<a href="#"><i class="icon-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="job-info">
+		<div class="container">
+			<div class="container-item">
+				<div class="header">
+					<h1>Kinh nghiệm</h1>
+					<div><i class="ic-toolbox"></i></div>
+				</div>
+				<div class="view-more">
+					View more
+				</div>
+				<div class="content">
+					<div class="mb-24 mt-24">
+						<h3 class="mb-16">KardiaChain</h3>
+						<div class="mb-16"><i>July 2020 - <span class="blue-badge">Now</span></i></div>
+						<p>- DAPP (Decentralized Application) Developer</p>
+						<p>- Main responsibilities: Development DAPP on KardiaChain.</p>
+						<p>- Project: Kardiachain Explore, KardiaChain Staking, KAIDEX, KardiaChain Revoker.</p>
+					</div>
+					<div class="mb-24 mt-24">
+						<h3 class="mb-16">FPT Software Ho Chi Minh</h3>
+						<i>May 2018 - <span>July 2020</span></i>
+						<p>- Web Developer</p>
+						<p>- Main responsibilities: Develop and maintain project web API.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-item">
+				<div class="header">
+					<h1>Học vấn</h1>
+					<div><i class="ic-pencil"></i></div>
+				</div>
+				<div class="view-more">
+					<span>View more</span>
+				</div>
+				<div class="content">
+					<div class="mb-24 mt-24">
+						<h3 class="mb-16">Funix Online University</h3>
+						<div class="mb-24"><i>8/2017 - <span class="blue-badge">Hiện tại</span></i></div>
+						<p>- Blockchain developer course</p>
+					</div>
+					<div class="mb-24 mt-24">
+						<h3 class="mb-16">FPT Fresher Academy</h3>
+						<i>5/2018 - <span>8/2018</span></i>
+						<p>- Java developer</p>
+						<p>- Web Application</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-item">
+				<div class="header">
+					<h1>Hoạt động</h1>
+					<div><i class="ic-toolbox"></i></div>
+				</div>
+				<div class="view-more">
+					<span>View more</span>
+				</div>
+				<div class="content">
+					<div class="mb-24 mt-24">
+						<h3 class="mb-16">FPT Edu Hackathon 2019</h3>
+						<div class="mb-16"><i>03/2019 - 05/2019</i></div>
+						<p>- Gỉai 3 bảng A</p>
+						<p>- Đề tài: Trang web phân loại rác thải</p>
+					</div>
+				</div>
+			</div>
+			<div class="hobbies container-item">
+				<div class="header">
+					<h1>Sở thích</h1>
+					<div><i class="ic-telescope"></i></div>
+				</div>
+				<div class="view-more">
+					View more
+				</div>
+				<div class="content">
+					<div class="flex">
+						<div class="hobbies-item">
+							<div class="icon">
+								<i class="ic-megaphone"></i>
+							</div>
+							<div>Âm nhạc</div>
+						</div>
+						<div class="hobbies-item">
+							<div class="icon">
+								<i class="ic-hotairballoon"></i>
+							</div>
+							<div>Du lịch</div>
+						</div>
+						<div class="hobbies-item">
+							<div class="icon">
+								<i class="ic-strategy"></i>
+							</div>
+							<div>Chơi game</div>
+						</div>
+						<div class="hobbies-item">
+							<div class="icon">
+								<i class="ic-basket"></i>
+							</div>
+							<div>Nấu ăn</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="languages container-item">
+				<div class="header">
+					<h1>Ngôn ngữ</h1>
+					<div><i class="ic-mic"></i></div>
+				</div>
+				<div class="view-more">
+					View more
+				</div>
+				<div class="content">
+					<div class="languages-item">
+						<h3>English - IELTS 7.0</h3>
+						<div>
+							<span class="process active"></span>
+							<span class="process active"></span>
+							<span class="process"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="skills container-item">
+				<div class="header">
+					<h1>Kỹ năng</h1>
+					<div><i class="ic-tools-2"></i></div>
+				</div>
+				<div class="view-more">
+					View more
+				</div>
+				<div class="content">
+					<div class="skills-item">
+						<h3>NodeJS</h3>
+						<div>
+							<span class="process active"></span>
+							<span class="process active"></span>
+							<span class="process"></span>
+						</div>
+					</div>
+					<div class="skills-item">
+						<h3>Golang</h3>
+						<div>
+							<span class="process active"></span>
+							<span class="process"></span>
+						</div>
+					</div>
+					<div class="skills-item">
+						<h3>Ethereum - Solidity</h3>
+						<div>
+							<span class="process active"></span>
+							<span class="process active"></span>
+							<span class="process"></span>
+						</div>
+					</div>
+					<div class="skills-item">
+						<h3>ReactJS</h3>
+						<div>
+							<span class="process active"></span>
+							<span class="process active"></span>
+							<span class="process"></span>
+						</div>
+					</div>
+					<div class="skills-item">
+						<h3>HTML/CSS/JS</h3>
+						<div>
+							<span class="process active"></span>
+							<span class="process active"></span>
+							<span class="process active"></span>
+							<span class="process"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section id="certificate" class="bg-grey">
+		<div class="container">
+			<h1 class="section-title">
+				Chứng chỉ - Giải thưởng
+			</h1>
+			<div class="content">
+				<div><img src="./images/Cert_DBI.png" alt=""></div>
+				<div><img src="./images/Cert_DBI.png" alt=""></div>
+				<div><img src="./images/Cert_DBI.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="project">
+		<div class="container">
+			<h1 class="section-title">
+				Dự án
+			</h1>
+			<div class="content">
+				<div class="project-item">
+					<img src="./images/project_1.png" alt="">
+					<div class="title">KardiaChain Explorer</div>
+					<div class="uint">
+						<div>
+							<span class="blue-badge">2022</span>
+						</div>
+						<div>
+							<i class="icon-user-1"></i> KardiaChain
+						</div>
+						<div>
+							<i class="icon-lamp"></i> Developer
+						</div>
+					</div>
+					<table>
+						<tr>
+							<td class="tb-title">About</td>
+							<td>Block Explorer and Analytics Platform for KardiaChain</td>
+						</tr>
+						<tr>
+							<td class="tb-title">My responsibility</td>
+							<td>Develop and maintenance</td>
+						</tr>
+						<tr>
+							<td class="tb-title">Technology</td>
+							<td>Blockchain, Solidity, ReactJS, Web3JS, Rest API.</td>
+						</tr>
+					</table>
+				</div>
+				<div class="project-item">
+					<img src="./images/project_2.png" alt="">
+					<div class="title">KardiaChain Staking</div>
+					<div class="uint">
+						<div>
+							<span class="blue-badge">2021</span>
+						</div>
+						<div>
+							<i class="icon-user-1"></i> KardiaChain
+						</div>
+						<div>
+							<i class="icon-lamp"></i> Developer
+						</div>
+					</div>
+					<table>
+						<tr>
+							<td class="tb-title">About</td>
+							<td class="tb-description">User interface for user staking KAI into DFT-DPOS consensus of
+								KardiaChain network</td>
+						</tr>
+						<tr>
+							<td class="tb-title">My responsibility</td>
+							<td>Develop and maintenance</td>
+						</tr>
+						<tr>
+							<td class="tb-title">Công nghệ</td>
+							<td>Blockchain, Solidity, ReactJS, Web3JS, Rest API.</td>
+						</tr>
+					</table>
+				</div>
+				<div class="project-item">
+					<img src="./images/project_3.png" alt="">
+					<div class="title">KAIDEX</div>
+					<div class="uint">
+						<div>
+							<span class="blue-badge">2021</span>
+						</div>
+						<div>
+							<i class="icon-user-1"></i> KAIDEX
+						</div>
+						<div>
+							<i class="icon-lamp"></i> Developer
+						</div>
+					</div>
+					<table>
+						<tr>
+							<td class="tb-title">About</td>
+							<td>Dex Exchange on KardiaChain</td>
+						</tr>
+						<tr>
+							<td class="tb-title">Responsibility</td>
+							<td>Develop and maintenance</td>
+						</tr>
+						<tr>
+							<td class="tb-title">Technology</td>
+							<td>Blockchain, Solidity, ReactJS, Web3JS, Rest API, Subgraph, GraphQL</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="bg-grey">
+		<div class="container">
+			<ul>
+				<li>
+					<a href="#"><i class="icon-facebook"></i><span>Facebook</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-linkedin"></i><span>Linkedin</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="icon-github-circled"></i><span>Github</span></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+
+</html>

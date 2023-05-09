@@ -1,0 +1,70 @@
+@media screen and (max-width: 992px) {
+  #banner .title h1 {
+    font-size: 60px;
+  }
+
+  /* about styling */
+  #about .container #target {
+    padding: 40px 20px;
+  }
+  #about .container #personal-info {
+    padding: 40px 20px;
+  }
+  #about .container .section-title {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+  #about .container .socials a {
+    font-size: 20px;
+  }
+
+  /* Job Info styling */
+  #job-info .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 40px;
+  }
+
+  #job-info .container > div {
+    padding: 40px;
+  }
+
+  #job-info .container .header i {
+    font-size: 48px;
+  }
+
+  /* certificate styling */
+  #certificate {
+    padding: 20px 48px;
+  }
+
+  #certificate .section-title {
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+  #certificate .content div {
+    margin-bottom: 12px;
+  }
+
+  /* Project styling */
+  #project .container {
+    padding: 48px;
+  }
+  #project .section-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .project-item .title {
+    font-size: 24px;
+    padding: 8px 16px;
+  }
+  .project-item .uint {
+    margin-bottom: 18px;
+    margin-top: 18px;
+    font-size: 12px;
+  }
+  .project-item table tr,
+  .project-item table td {
+    font-size: 12px;
+  }
+}
