@@ -1,35 +1,37 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   #banner .title h1 {
     font-size: 60px;
   }
 
   /* about styling */
-  #about .container #target {
+  #about #target {
     padding: 40px 20px;
   }
-  #about .container #personal-info {
+  #about #personal-info {
     padding: 40px 20px;
   }
-  #about .container .section-title {
+  #about .section-title {
     font-size: 32px;
     margin-bottom: 48px;
   }
-  #about .container .socials a {
+  #about .socials a {
     font-size: 20px;
   }
 
   /* Job Info styling */
   #job-info .container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 40px;
+    padding: 20px;
   }
 
-  #job-info .container > div {
-    padding: 40px;
+  #job-info .job-info-wrapper {
+    column-count: 2;
   }
 
-  #job-info .container .header i {
+  #job-info .container-item {
+    padding: 20px;
+  }
+
+  #job-info .header i {
     font-size: 48px;
   }
 
@@ -42,16 +44,37 @@
     margin-bottom: 32px;
     font-size: 32px;
   }
-  #certificate .content div {
-    margin-bottom: 12px;
+
+  #certificate .row > div {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff926b;
+  }
+
+  #certificate .row > div {
+    border-left: none;
+  }
+
+  #certificate .row > div > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #certificate .row > div:nth-child(2) > div {
+    border-left: 1px solid #ff926b;
+  }
+
+   #certificate .row > div:last-child {
+    border-bottom: none;
   }
 
   /* Project styling */
   #project .container {
-    padding: 48px;
+    padding: 40px 48px;
   }
   #project .section-title {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 18px;
   }
   .project-item .title {

@@ -3,7 +3,6 @@ function validateEmail () {
     let emailErrorMsg = document.getElementById('emailErrorMsg');
     let userInformation = document.getElementById('userInformation');
     let emailForm = document.getElementById('emailForm');
-    console.log(emailInput.value);
     var mailformat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (emailInput.value.match(mailformat)) {
         emailErrorMsg.style.display = 'none';

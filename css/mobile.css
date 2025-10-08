@@ -1,7 +1,7 @@
 @media screen and (max-width: 576px) {
   /* Banner styling */
-  #banner .title {
-    top: 50%;
+  #banner {
+    min-height: 300px;
   }
   #banner .title h1 {
     font-size: 30px;
@@ -10,35 +10,50 @@
     font-size: 20px;
   }
   /* Nav bar styling */
-  #nav-bar .container {
-    display: block;
-  }
-  #nav-bar .container a {
-    display: block;
-    text-align: left;
+  #nav-bar .row > div {
     padding: 16px;
+  }
+  #nav-bar a {
+    text-align: left;
+  }
+  #nav-bar .nav-item {
+    border: none;
   }
   /* about styling */
-  #about .container {
-    display: block;
-  }
-  #about .container #target {
+  #about #target {
     padding: 16px;
   }
-  #about .container #personal-info {
+  #about #personal-info {
     padding: 16px;
   }
-  #about .container .section-title {
+  #about .section-title {
     font-size: 32px;
   }
 
-  #about .container .socials a {
+  #about .socials a {
     font-size: 18px;
   }
 
   /* Job Info styling */
   #job-info .container {
-    grid-template-columns: repeat(1, 1fr);
+    padding: 16px;
+  }
+
+  #job-info .job-info-wrapper {
+    column-count: 1;
+  }
+
+  #job-info .container-item {
+    padding: 16px;
+  }
+
+  #job-info .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #job-info .header i {
+    font-size: 32px;
   }
 
   /* certificate styling */
@@ -51,35 +66,39 @@
     font-size: 32px;
   }
 
-  #certificate .content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #certificate .content div {
-    margin-bottom: 32px;
-    border-bottom: 2px solid rgb(255, 146, 107);
-    padding-bottom: 20px;
-  }
-
-  #certificate .content div:nth-child(even) {
-    border-left: none;
+  #certificate .row > div {
     padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff926b;
   }
 
-  #certificate .content img {
-    width: 100%;
+  #certificate .row > div:nth-child(2) > div {
+    border-left: none;
+  }
+
+  #certificate .row > div:last-child {
+    border-bottom: 1px solid #ff926b;
+  }
+
+  #certificate img {
+    border-bottom: 2px solid #ff926b;
+    padding-bottom: 15px;
   }
 
   /* Project styling */
   #project .container {
     padding: 16px;
   }
-  #project .content {
-    grid-template-columns: repeat(1, 1fr);
+  #project .section-title {
+    font-size: 24px;
+  }
+  .project-item .title {
+    font-size: 20px;
   }
 
-  #footer .container ul li span {
-    display: none;
+  #footer .container {
+    padding: 16px;
   }
 }
