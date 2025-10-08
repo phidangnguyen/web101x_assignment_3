@@ -147,6 +147,7 @@ section > .container {
 #job-info .job-info-wrapper {
   column-count: 3;
   column-gap: 20px;
+  column-fill: balance;
 }
 
 #job-info .container-item {
@@ -317,7 +318,7 @@ section > .container {
   padding: 8px 12px;
   text-align: center;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
 
 #job-info .container-item:hover .view-more {
